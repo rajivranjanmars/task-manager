@@ -8,7 +8,7 @@ const TaskList = () => {
     const [localTasks, setLocalTasks] = useState([]);
 
     useEffect(() => {
-        const storedTasks = JSON.parse(localStorage.getItem('tasks')) || [];
+        const storedTasks = JSON.parse(window.localStorage.getItem('tasks')) || [];
         setLocalTasks(storedTasks);
     }, []);
 
@@ -36,7 +36,7 @@ const TaskList = () => {
             } else {
                 updatedLocalTasks[taskIndex].completed = !updatedLocalTasks[taskIndex].completed; // Toggle completion status
             }
-            localStorage.setItem('tasks', JSON.stringify(updatedLocalTasks));
+            window.localStorage.setItem('tasks', JSON.stringify(updatedLocalTasks));
             setLocalTasks(updatedLocalTasks);
         }
     };
