@@ -4,7 +4,6 @@ import TaskInput from './components/TaskInput';
 import TaskList from './components/TaskList';
 import Header from './components/Header'; // Import Header component
 import store from './redux/store';
-import 'tailwindcss/tailwind.css';
 
 function App() {
   // useEffect and other code as before
