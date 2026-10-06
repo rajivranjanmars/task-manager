@@ -8,4 +8,4 @@ Run `npm install` and `npm start`. Use `npm run build` for a production build an
 
 ## Author
 
-Author: [rajivranjanmars](https://rajivranjana.in).
+Author: [Rajiv Ranjan](https://rajivranjan.in).
